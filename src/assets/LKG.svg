@@ -1,0 +1,67 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 520 200"
+  width="520"
+  height="200"
+>
+  <style>
+    .draw {
+      fill: none;
+      stroke: #000;
+      stroke-width: 6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 2000;
+      animation: draw 3.5s ease-in-out forwards;
+    }
+
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+
+  <!-- L -->
+  <path
+    class="draw"
+    d="
+      M70 40
+      Q60 100 70 160
+      Q72 168 90 165
+      L145 165
+    "
+  />
+
+  <!-- K -->
+  <path
+    class="draw"
+    d="
+      M205 40
+      Q195 100 205 160
+
+      M205 100
+      Q235 80 265 45
+
+      M205 100
+      Q235 120 270 165
+    "
+    style="animation-delay: 0.4s;"
+  />
+
+  <!-- G (Handwritten / Logo Curve) -->
+  <path
+    class="draw"
+    d="
+      M405 65
+      C370 35, 295 45, 275 100
+      C255 155, 300 185, 345 180
+      C380 175, 405 150, 405 125
+      L360 125
+      Q350 125 350 115
+    "
+    style="animation-delay: 0.8s;"
+  />
+
+</svg>
