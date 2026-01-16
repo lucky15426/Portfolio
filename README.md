@@ -24,7 +24,7 @@ It’s packed with smooth animations, dynamic visuals, and a dash of personality
 
 **Frontend:**  
 - React + Vite  
-- TypeScript  
+- JavaScript  
 - Tailwind CSS  
 
 **Libraries & Tools:**  
