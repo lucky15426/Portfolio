@@ -63,7 +63,7 @@ const SplashLoader = ({ onAnimationComplete }) => {
     // Signature draw animation with stagger
     tl.to(paths, {
       strokeDashoffset: 0,
-      duration: 2.5,
+      duration: 3,
       ease: 'power2.inOut',
       stagger: {
         each: 0.15,
