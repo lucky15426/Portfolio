@@ -5,6 +5,9 @@ import { ThemeContext } from '../App';
 import project1 from '../assets/project1.png';
 import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
+import Project4 from '../assets/image4.png';
+import Project5 from '../assets/image5.png';
+import Project6 from '../assets/image6.png';
 import { DiPostgresql } from 'react-icons/di';
 
 function Projects() {
@@ -21,7 +24,26 @@ function Projects() {
             image: project1
         },
         {
+            title: 'Safar360',
+            badge: 'VoyageHack Finalist',
+            description: 'AI-powered travel platform featuring personalized itinerary generation using Google Gemini. Integrated real-time APIs for flights and hotels with 360°/VR exploration.',
+            tags: ['Node.js', 'FastAPI', 'Google Gemini', 'React', '360° VR'],
+            link: 'https://safar360.vercel.app/',
+            github: 'https://github.com/lucky15426/Safar360',
+            image: Project6 // User: Replace with Safar360 image
+        },
+        {
+            title: 'ADHD Assessment Platform',
+            badge: 'AI-driven Healthcare',
+            description: 'A complete AI-driven healthcare solution leveraging CNN + LSTM and Random Forest for prediction. Scalable FastAPI backend and React frontend.',
+            tags: ['React', 'FastAPI', 'Deep Learning', 'Docker', 'Hugging Face'],
+            link: 'https://adhd-detection-psi.vercel.app/',
+            github: 'https://github.com/lucky15426/ADHD_Detection',
+            image: Project5 // User: Replace with ADHD project image
+        },
+        {
             title: 'Welth',
+            badge: 'FinTech Solution',
             description: 'Welth is a full-stack financial management platform that simplifies personal finance by automating transaction tracking, categorization, and financial insights',
             tags: ['React 19', 'Next.js 15', 'Tailwind CSS', 'Shadcn Ui', 'PostgreSql'],
             link: 'https://welth-lovat.vercel.app/',
@@ -29,7 +51,18 @@ function Projects() {
             image: project2,
         },
         {
+            title: 'Prakash Amusements',
+            badge: 'Business Solution',
+            description: 'A premium, interactive web application featuring ride bookings, event management, and a custom loading experience. Built for a family business.',
+            tags: ['React', 'Vanilla CSS', 'EmailJS', 'Vercel'],
+            link: 'https://business-project-murex.vercel.app/',
+            github: 'https://github.com/lucky15426/Business_project',
+            image: Project4,
+            // User: Replace with Business project image
+        },
+        {
             title: 'WanderLust',
+            badge: 'Full-Stack Web App',
             description: 'WanderLust is a full-stack web app for listing and discovering unique stays and destinations. Built with Node.js, Express, MongoDB, and EJS.',
             tags: ['Node.js', 'Express', 'MongoDB', 'EJS'],
             link: 'https://wanderlust-ocou.onrender.com/',
