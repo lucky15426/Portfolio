@@ -13,23 +13,13 @@ if (import.meta.env.VITE_GA_MEASUREMENT_ID) {
 
 
 function Root() {
-  const [isLoading, setIsLoading] = useState(true);
-
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2500); // 2.5-second delay for the loader
-
-
-    return () => clearTimeout(timer);
-  }, []);
-
+  const [showLoader, setShowLoader] = useState(true);
 
   return (
     // <StrictMode>
     <BrowserRouter>
-      {isLoading ? <SplashLoader /> : <App />}
+      {showLoader && <SplashLoader onAnimationComplete={() => setShowLoader(false)} />}
+      <App />
     </BrowserRouter>
     // </StrictMode>
   );

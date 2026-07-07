@@ -8,12 +8,22 @@ import project3 from '../assets/project3.png';
 import Project4 from '../assets/image4.png';
 import Project5 from '../assets/image5.png';
 import Project6 from '../assets/image6.png';
+import ghostCustomerImg from '../assets/ghostcustomer.png';
 import { DiPostgresql } from 'react-icons/di';
 
 function Projects() {
     const { theme } = useContext(ThemeContext);
 
     const projects = [
+        {
+            title: 'Ghost Customer AI',
+            badge: 'AI Agent Swarm',
+            description: 'An AI platform that creates hundreds of pretend customers to explore and stress-test your website. Each persona behaves like a real buyer (CTO, founder, etc.) to uncover revenue leaks and churn risks before launch.',
+            tags: ['Next.js 15', 'React 19', 'Gemini 2.5', 'Groq API', 'Supabase', 'Tailwind CSS'],
+            link: 'https://www.ghostcustomer.in/',
+            github: 'https://github.com/lucky15426/GhostCustomer',
+            image: ghostCustomerImg
+        },
         {
             title: 'BharatVerse',
             badge: "SIH'25 Winning project",
