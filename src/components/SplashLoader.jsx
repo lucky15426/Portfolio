@@ -213,12 +213,11 @@ const SplashLoader = ({ onAnimationComplete }) => {
         />
       </div>
 
-      {/* Main Animation Container */}
       <div
         ref={pillarWrapperRef}
         style={{
           width: '100%',
-          height: '600px',
+          height: '100%',
           position: 'relative',
           display: 'flex',
           justifyContent: 'center',
@@ -260,7 +259,7 @@ const SplashLoader = ({ onAnimationComplete }) => {
           {/* Staggered Title Letters */}
           <h1
             style={{
-              fontSize: 'clamp(2rem, 6vw, 3.5rem)',
+              fontSize: 'clamp(1.1rem, 5.5vw, 3.5rem)',
               fontWeight: '900',
               letterSpacing: '0.15em',
               color: '#ffffff',

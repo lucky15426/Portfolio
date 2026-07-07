@@ -129,7 +129,7 @@ function Hero() {
           transition={{ duration: 0.6, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="relative inline-block group/name mb-8 cursor-default"
         >
-          <span className={`text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight ${theme === "dark" ? "text-[#b8f2e6]" : "text-[#5e6472]"
+          <span className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight ${theme === "dark" ? "text-[#b8f2e6]" : "text-[#5e6472]"
             }`}>
             {nameLetters.map((char, i) => (
               <motion.span
