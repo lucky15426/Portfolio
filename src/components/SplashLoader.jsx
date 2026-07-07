@@ -57,10 +57,8 @@ const SplashLoader = ({ onAnimationComplete }) => {
     gsap.set(container, { opacity: 0 });
     gsap.set(letters, { 
       opacity: 0, 
-      y: 35, 
-      scale: 0.75,
-      rotateX: -45,
-      transformOrigin: "50% 50% -10px"
+      y: 25, 
+      scale: 0.8
     });
     gsap.set(barContainer, { scaleX: 0, opacity: 0 });
     gsap.set(progressBar, { width: '0%' });
@@ -76,15 +74,14 @@ const SplashLoader = ({ onAnimationComplete }) => {
       { scale: 1, opacity: 1, duration: 0.7, ease: 'power3.out' },
       '-=0.15'
     )
-    // 3D Flip, scale & elastic bounce for letters
+    // 2D fade, slide & elastic bounce for letters (keeps text sharp on mobile)
     .to(letters, {
       opacity: 1,
       y: 0,
       scale: 1,
-      rotateX: 0,
-      duration: 0.7,
+      duration: 0.6,
       stagger: 0.03,
-      ease: 'back.out(1.8)',
+      ease: 'back.out(1.5)',
     }, '-=0.55')
     // Slide in and expand the loading bar container
     .to(barContainer, {
@@ -253,7 +250,8 @@ const SplashLoader = ({ onAnimationComplete }) => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            perspective: '1000px',
+            WebkitFontSmoothing: 'antialiased',
+            MozOsxFontSmoothing: 'grayscale',
           }}
         >
           {/* Staggered Title Letters */}
@@ -263,12 +261,11 @@ const SplashLoader = ({ onAnimationComplete }) => {
               fontWeight: '900',
               letterSpacing: '0.15em',
               color: '#ffffff',
-              textShadow: '0 0 30px rgba(184, 242, 230, 0.4), 0 0 10px rgba(174, 217, 224, 0.4)',
+              textShadow: '0 0 20px rgba(184, 242, 230, 0.45)',
               margin: 0,
               textTransform: 'uppercase',
               whiteSpace: 'nowrap',
               display: 'flex',
-              transformStyle: 'preserve-3d',
             }}
           >
             {title.split('').map((char, index) => (
