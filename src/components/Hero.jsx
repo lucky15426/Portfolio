@@ -45,7 +45,7 @@ function Hero() {
     });
 
     window.open(
-      "https://drive.google.com/file/d/1FCQKmA5H5FlDPRt9u8JfQNdMmY8cmxqt/view?usp=sharing",
+      "https://drive.google.com/file/d/1XVEJ-rjto94pHKH0CEGLV4qK20M_40ii/view?usp=sharing",
       "_blank",
       "noopener,noreferrer"
     );
